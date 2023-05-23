@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+function grantAccess(password) {
+  const database = {
+    firstGroup: 'доступны модули баз А, В и С',
+    secondGroup: 'доступны модули баз В и С',
+    thirdGroup: 'доступен модуль базы С'    
+  }
+  const passwords = {
+    9583: 'firstGroup',
+    1747: 'firstGroup',
+    3331: 'secondGroup',
+    7922: 'secondGroup',
+    9455: 'thirdGroup',
+    8997: 'thirdGroup'
+  }
+  
+  return database[passwords[password]] ?? 'Wrong password';
+}
+alert(grantAccess(prompt('password')));
+ 
+    </script>
+</body>
+</html>

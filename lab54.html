@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <script>
+    let listType = prompt("введите '1'-text, '2'- кнопка, '3'-переключ")
+    if(listType == '1'){
+        document.write("<input type =text>")
+    }else if(listType == '2'){
+        document.write("<input type =button>")
+    }else if(listType == '3'){
+        document.write("<input type =radio>")
+    }else{
+        alert("введ")
+        exit
+    }
+    let kolvo = prompt("введите кол во пунктов")
+    kolvo = parseInt(kolvo)
+    for(let i=1; i<=kolvo; i++){
+       document.write("<li></li>") 
+       
+    }if(listType == '1'){
+        document.write("<input type = text>")
+        
+    }else if(listType == '2'){
+        document.write("<input type = button>")
+    }else if(listType == '3'){
+        document.write("<input type = radio>")
+    }
+    </script>
+</body>
+</html>
